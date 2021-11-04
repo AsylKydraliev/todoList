@@ -1,0 +1,13 @@
+.addTaskForm{
+  margin-top: 55px;
+}
+
+.addTaskInput{
+  width: 350px;
+  padding: 10px 5px;
+}
+
+.addTaskBtn{
+  padding: 10px 5px;
+  margin-left: 15px;
+}

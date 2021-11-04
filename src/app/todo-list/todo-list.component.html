@@ -1,0 +1,12 @@
+<form class="addTaskForm">
+  <input class="addTaskInput" placeholder="Add new task" (change)="onInputValue($event)">
+  <button type="submit" class="addTaskBtn" (click)="onAddTask($event)">Add task</button>
+</form>
+
+<app-task
+  *ngFor="let task of tasks; let i = index"
+  [text]="task"
+  (delete)="onDeleteTask(i)"
+></app-task>
+
+
