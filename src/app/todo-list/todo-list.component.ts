@@ -7,7 +7,7 @@ import {Component} from '@angular/core';
 })
 export class TodoListComponent {
   taskValue = '';
-  tasks: string[] = [];
+  tasks: string[] = ['Buy milk', 'Walk with dog', 'Do homework'];
 
   onInputValue(event: Event) {
     const target = <HTMLInputElement>event.target;
@@ -17,6 +17,8 @@ export class TodoListComponent {
   onAddTask (event: Event) {
     event.preventDefault();
     this.tasks.push(this.taskValue);
+    console.log(this.taskValue)
+    this.taskValue = '';
   }
 
   onDeleteTask(i: number) {

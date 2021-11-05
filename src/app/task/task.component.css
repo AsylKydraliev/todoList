@@ -1,26 +1,39 @@
 .inputWithButton {
   position: relative;
-  width : 400px;
+  width : 500px;
   margin-top: 50px;
-  margin-left: 455px;
+  margin-left: 430px;
 }
 
-.inputWithButton input{
+.inputText{
   width: 70%;
   height: 25px;
   border: none;
   padding: 10px 120px 10px 0;
+  border-radius: 10px;
 }
 
 .inputWithButton :focus {
   outline: none;
-  box-shadow: -1px 10px 6px -1px #7A7E8E;
+  box-shadow: 1px -11px 11px -7px #1E90FF inset;
 }
 
 .inputWithButton button {
   position: absolute;
   right: 0;
+  top : 7px;
+  padding: 6px 10px;
+  margin-right: 60px;
+  background: #1E90FF;
+  border-radius: 5px;
+  border: none;
+}
+
+.check{
+  position: absolute;
+  right: 20px;
   top : 5px;
-  padding: 8px 10px;
-  margin-right: 5px;
+  width: 2.3em;
+  height: 60%;
+  border: none;
 }
